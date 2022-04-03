@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  box-sizing: border-box
+}
+
+.Navbar{
+  height: 70px;
+  background-color: rgb(129, 129, 129);
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Navbar-info{
+  display: flex;
+  align-items: center;
+  
+}
+
+#Navbar-info-logo{
+  height: 40px;
+  border-radius: 25%;
+}
+
+#Navbar-info-title{
+  margin-left: 10px;
+
+}
+
+#Icon-ham{
+  height: 30px;
+}
