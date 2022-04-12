@@ -3,7 +3,7 @@
   box-sizing: border-box
 }
 
-.Navbar{
+.navbar{
   height: 70px;
   background-color: rgb(129, 129, 129);
   display: flex;
@@ -12,22 +12,22 @@
   align-items: center;
 }
 
-#Navbar-info{
+#navbar-info{
   display: flex;
   align-items: center;
   
 }
 
-#Navbar-info-logo{
+#navbar-info-logo{
   height: 40px;
   border-radius: 25%;
 }
 
-#Navbar-info-title{
+#navbar-info-title{
   margin-left: 10px;
 
 }
 
-#Icon-ham{
+#icon-ham{
   height: 30px;
 }
