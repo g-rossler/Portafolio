@@ -10,6 +10,8 @@
   padding: 20px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 #navbar-info{
@@ -21,13 +23,14 @@
 #navbar-info-logo{
   height: 40px;
   border-radius: 25%;
+  cursor: pointer;
 }
 
 #navbar-info-title{
   margin-left: 10px;
-
 }
 
 #icon-ham{
   height: 30px;
+  cursor: pointer;
 }
