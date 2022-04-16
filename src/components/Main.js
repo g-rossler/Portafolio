@@ -1,25 +1,26 @@
+import Contact from './Contact';
 import './Main.css';
 
 export default function Main() {
   return (
-    <div className="main">
+    <div id="main">
 
-      <section className="main-introduccion">
-        <h1 className="main-introduccion-title">HELLO MY NAME IS GERARDO ROSSLER</h1>
-        <p className="main-introduccion-subtitle">I&apos;m a front end developer.</p>
-        <div className="main-introduccion-group-button">
+      <section id="main-introduccion">
+        <h1 id="main-introduccion-title">HELLO MY NAME IS GERARDO ROSSLER</h1>
+        <p id="main-introduccion-subtitle">I&apos;m a front end developer.</p>
+        <div id="main-introduccion-group-button">
           <button type="button" className="main-introduccion-button" id="button-proyects">PROJECTS</button>
           <button type="button" className="main-introduccion-button" id="button-github">GITHUB</button>
           <button type="button" className="main-introduccion-button" id="button-linkedin">LINKEDIN</button>
         </div>
       </section>
 
-      <section className="main-about-me">
-        <h2 className="main-about-me-title">ABOUT ME</h2>
-        <p className="main-about-me-subtitle">I am a software developer</p>
-        <div className="main-technologies">
-          <h2 className="main-technologies-title">TECHNOLOGIES</h2>
-          <div className="main-technologies-list">
+      <section id="main-about-me">
+        <h2 id="main-about-me-title">ABOUT ME</h2>
+        <p id="main-about-me-subtitle">I am a software developer</p>
+        <div id="main-technologies">
+          <h2 id="main-technologies-title">TECHNOLOGIES</h2>
+          <div id="main-technologies-list">
             <div className="main-technologies-list-item">HTML</div>
             <div className="main-technologies-list-item">JavaScript</div>
             <div className="main-technologies-list-item">CSS</div>
@@ -37,9 +38,9 @@ export default function Main() {
         </div>
       </section>
 
-      <section className="main-proyect">
-        <h2 className="main-proyect-title">PROYECTS</h2>
-        <div className="main-proyect-list">
+      <section id="main-proyect">
+        <h2 id="main-proyect-title">PROYECTS</h2>
+        <div id="main-proyect-list">
           <div className="main-proyect-list-item">
             <h4 className="main-proyect-list-item-title">Pokedex</h4>
             <p className="main-proyect-list-item-subtitle">example text</p>
@@ -65,7 +66,7 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <h3 className="main-proyect-subtitle">SMALL PROYECTS</h3>
+        <h3 id="main-proyect-subtitle">SMALL PROYECTS</h3>
         <div className="main-proyect-subtitle-list">
           <div className="main-proyect-subtitle-list-item">
             <h4 className="main-proyect-subtitle-list-item-title">Example proyect</h4>
@@ -94,23 +95,7 @@ export default function Main() {
         </div>
       </section>
 
-      <section className="main-contact">
-        <h2 className="main-contact-title">CONTACT</h2>
-        <form action="" className="main-contact-form">
-          <label htmlFor="name" className="main-contact-form-label-name">
-            Name:
-            <input type="text" placeholder="Enter Your Name" id="name" className="main-contact-form-input-name" />
-          </label>
-          <label htmlFor="email" className="main-contact-form-label-email">
-            Email:
-            <input type="text" placeholder="Enter Your Email" id="email" className="main-contact-form-input-email" />
-          </label>
-          <label htmlFor="message" className="main-contact-form-label-message">
-            Message:
-            <input type="text" placeholder="Enter Your Message" id="message" className="main-contact-form-input-message" />
-          </label>
-        </form>
-      </section>
+      <Contact />
     </div>
   );
 }
