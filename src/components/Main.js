@@ -1,3 +1,4 @@
+import { FormspreeProvider } from '@formspree/react';
 import Contact from './Contact';
 import './Main.css';
 
@@ -94,8 +95,9 @@ export default function Main() {
           </div>
         </div>
       </section>
-
-      <Contact />
+      <FormspreeProvider project="1922533808612047967">
+        <Contact />
+      </FormspreeProvider>
     </div>
   );
 }

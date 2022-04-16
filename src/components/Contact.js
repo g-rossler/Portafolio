@@ -1,10 +1,16 @@
 import './Contact.css';
+import { useForm } from '@formspree/react';
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm('1922533808612047967');
+  if (state.succeeded) {
+    return <div>Thank you for signing up!</div>;
+  }
+
   return (
     <section id="main-contact">
       <h2 id="main-contact-title">CONTACT</h2>
-      <form action="" id="main-contact-form">
+      <form action="" id="main-contact-form" onSubmit={handleSubmit}>
         <div className="form-element">
           <label htmlFor="main-contact-form-input-name" id="main-contact-form-label-name" className="form-label">
             Name:
@@ -38,7 +44,7 @@ export default function Contact() {
             />
           </label>
         </div>
-        <button type="submit" id="form-button">Submit</button>
+        <button type="submit" id="form-button" disabled={state.submitting}>Submit</button>
       </form>
     </section>
   );
