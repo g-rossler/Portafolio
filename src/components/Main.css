@@ -5,19 +5,19 @@
 	font-weight: 400;
 }
 
-.main{
+#main{
   margin: auto;
 }
 
-.main-introduccion{
+#main-introduccion{
   padding: 5rem 1rem 5rem;
-  background-color: blue;
+  background-color: url(./Image/pattern.svg);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.main-introduccion-title{
+#main-introduccion-title{
   padding-top: 50px;
 	font-weight: 700;
 	font-size: 2.5rem;
@@ -27,7 +27,7 @@
 	line-height: 50px;
 }
 
-.main-introduccion-subtitle{
+#main-introduccion-subtitle{
 	padding-top: 60px;
 	font-weight: 500;
 	font-size: 1.5rem;
@@ -35,7 +35,7 @@
 	letter-spacing: 1px;
 }
 
-.main-introduccion-group-button{
+#main-introduccion-group-button{
 	padding-top: 60px;
 	display: flex;
 	justify-content: center;
@@ -59,7 +59,7 @@
 	cursor: pointer;
 }
 
-.main-about-me{
+#main-about-me{
 	background-color: brown;
 	display: flex;
 	flex-direction: column;
@@ -67,30 +67,30 @@
 	padding: 3rem 1rem 5rem;
 }
 
-.main-about-me-title{
+#main-about-me-title{
 	padding-top: 1rem;
 	font-weight: 600;
 	font-size: 2.2rem;
 	letter-spacing: 3px;
 }
 
-.main-about-me-subtitle{
+#main-about-me-subtitle{
 	padding-top: 1rem;
 	letter-spacing: 1px;
 }
 
-.main-technologies{
+#main-technologies{
 	padding-top: 2rem;
 }
 
-.main-technologies-title{
+#main-technologies-title{
 	font-weight: 500;
 	font-size: 1.8rem;
 	text-align: center;
 	letter-spacing: 3px;
 }
 
-.main-technologies-list{
+#main-technologies-list{
 	padding-top: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -106,7 +106,7 @@
 	letter-spacing: 1px;
 }
 
-.main-proyect{
+#main-proyect{
 	background-color: cadetblue;
 	padding: 3rem 0 3rem;
 	display: flex;
@@ -114,14 +114,14 @@
 	align-items: center;
 }
 
-.main-proyect-title{
+#main-proyect-title{
 	padding-top: 1rem;
 	font-weight: 600;
 	font-size: 2.2rem;
 	letter-spacing: 3px;
 }
 
-.main-proyect-list{
+#main-proyect-list{
 	padding-top: 1.5rem;
 	width: 90%;
 }
@@ -146,8 +146,7 @@
 .main-proyect-list-item-group-button{
 	padding-top: 1rem;
 	display: flex;
-	justify-content: space-around;
-	
+	justify-content: space-around;	
 }
 
 .main-proyect-list-item-button{
@@ -156,7 +155,7 @@
 	width: 150px;
 }
 
-.main-proyect-subtitle{
+#main-proyect-subtitle{
 	font-weight: 500;
 	font-size: 1.8rem;
 	text-align: center;
@@ -164,68 +163,29 @@
 	padding-top: 2rem;
 }
 
-.main-proyect-subtitle-list{
+#main-proyect-subtitle-list{
 	padding-top: 1.5rem;
 }
 
-.main-proyect-subtitle-list-item{
+#main-proyect-subtitle-list-item{
 	border: 1px solid black;
 	margin-top: 1rem;
 	padding: 1rem;
 }
 
-.main-proyect-subtitle-list-item-title{
+#main-proyect-subtitle-list-item-title{
 	text-align: center;
 }
 
-.main-proyect-subtitle-list-item-subtitle{
+#main-proyect-subtitle-list-item-subtitle{
 	text-align: center;
 	padding-top: 1rem;
 }
 
-.main-proyect-subtitle-list-item-botton{
+#main-proyect-subtitle-list-item-botton{
 	cursor: pointer;
 	margin: 1rem;
 	padding: 1rem;
 }
 
-.main-contact{
-	background-color: yellow;
-	display: flex;
-	flex-direction: column;
-}
 
-.main-contact-title{
-	padding-top: 1rem;
-	font-weight: 600;
-	font-size: 2.2rem;
-	letter-spacing: 3px;
-}
-
-.main-contact-form{
-
-}
-
-.main-contact-form-label-name{
-
-}
-
-.main-contact-form-input-name{
-
-}
-
-.main-contact-form-label-email{
-
-}
-
-.main-contact-form-input-email{
-    
-}
-
-.main-contact-form-label-message{
-
-}
-
-.main-contact-form-input-message{
-    
-}
