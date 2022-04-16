@@ -1,16 +1,10 @@
 import './Contact.css';
-import { ValidationError, useForm } from '@formspree/react';
 
 export default function Contact() {
-  const [state, handleSubmit] = useForm('mayvppdv');
-  if (state.succeeded) {
-    return <div>Thank you for signing up!</div>;
-  }
-
   return (
     <section id="main-contact">
       <h2 id="main-contact-title">CONTACT</h2>
-      <form action="" id="main-contact-form" onSubmit={handleSubmit}>
+      <form action="" id="main-contact-form">
         <div className="form-element">
           <label htmlFor="main-contact-form-input-name" id="main-contact-form-label-name" className="form-label">
             Name:
@@ -44,8 +38,7 @@ export default function Contact() {
             />
           </label>
         </div>
-        <ValidationError field="email" prefix="Email" errors={state.errors} />
-        <button type="submit" disabled={state.disabled} id="form-button">Submit</button>
+        <button type="submit" id="form-button">Submit</button>
       </form>
     </section>
   );
