@@ -1,4 +1,5 @@
 import './Main.css';
+import Form from './Form-Contact';
 
 export default function Main() {
   return (
@@ -93,7 +94,7 @@ export default function Main() {
           </div>
         </div>
       </section>
-
+      <Form />
     </div>
   );
 }
