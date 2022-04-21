@@ -9,9 +9,9 @@ export default function Main() {
         <h1 id="main-introduccion-title">HELLO MY NAME IS GERARDO ROSSLER</h1>
         <p id="main-introduccion-subtitle">I&apos;m a front end developer.</p>
         <div id="main-introduccion-group-button">
-          <button type="button" className="main-introduccion-button" id="button-proyects">PROJECTS</button>
-          <button type="button" className="main-introduccion-button" id="button-github">GITHUB</button>
-          <button type="button" className="main-introduccion-button" id="button-linkedin">LINKEDIN</button>
+          <button type="button" className="main-introduccion-button button-54" id="button-proyects">PROJECTS</button>
+          <button type="button" className="main-introduccion-button button-54" id="button-github">GITHUB</button>
+          <button type="button" className="main-introduccion-button button-54" id="button-linkedin">LINKEDIN</button>
         </div>
       </section>
 
