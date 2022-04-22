@@ -16,17 +16,21 @@ export default function Form() {
         '2yGUAhHTX8tnAmsLP',
       )
       .then(
-        (result) => {
+        () => {
           const $div = document.createElement('div');
-          $div.innerText = 'hola';
+          $div.innerText = 'Exito';
           const $sectionForm = document.querySelector('#section-form');
           $sectionForm.appendChild($div);
           const $form = document.querySelector('#form-container');
           $form.remove();
-          console.log(result);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          const $div = document.createElement('div');
+          $div.innerText = 'Error';
+          const $sectionForm = document.querySelector('#section-form');
+          $sectionForm.appendChild($div);
+          const $form = document.querySelector('#form-container');
+          $form.remove();
         },
       );
   };
