@@ -1,20 +1,49 @@
-import './Main.css';
+import {
+  Flex, Heading, ButtonGroup, Button, Text,
+} from '@chakra-ui/react';
 import Form from './Form-Contact';
 
 export default function Main() {
   return (
-    <div id="main">
+    <Flex id="main" direction="column">
+      <Flex
+        id="main-introduccion"
+        direction="column"
+        p={3}
+        backgroundColor="blue"
+      >
+        <Heading id="main-introduccion-title">
+          HELLO MY NAME IS GERARDO ROSSLER
+        </Heading>
+        <Text id="main-introduccion-subtitle">
+          I&apos;m a front end developer.
+        </Text>
+        <ButtonGroup id="main-introduccion-group-button">
+          <Button
+            type="button"
+            className="main-introduccion-button button-54"
+            id="button-proyects"
+          >
+            PROJECTS
+          </Button>
+          <Button
+            type="button"
+            className="main-introduccion-button button-54"
+            id="button-github"
+          >
+            GITHUB
+          </Button>
+          <Button
+            type="button"
+            className="main-introduccion-button button-54"
+            id="button-linkedin"
+          >
+            LINKEDIN
+          </Button>
+        </ButtonGroup>
+      </Flex>
 
-      <section id="main-introduccion">
-        <h1 id="main-introduccion-title">HELLO MY NAME IS GERARDO ROSSLER</h1>
-        <p id="main-introduccion-subtitle">I&apos;m a front end developer.</p>
-        <div id="main-introduccion-group-button">
-          <button type="button" className="main-introduccion-button button-54" id="button-proyects">PROJECTS</button>
-          <button type="button" className="main-introduccion-button button-54" id="button-github">GITHUB</button>
-          <button type="button" className="main-introduccion-button button-54" id="button-linkedin">LINKEDIN</button>
-        </div>
-      </section>
-
+      {/*
       <section id="main-about-me">
         <h2 id="main-about-me-title">ABOUT ME</h2>
         <p id="main-about-me-subtitle">I am a software developer</p>
@@ -73,7 +102,8 @@ export default function Main() {
             <p className="main-proyect-subtitle-list-item-subtitle">example text</p>
             <div className="main-proyect-subtitle-list-item-group-button">
               <button type="button" className="main-proyect-subtitle-list-item-botton">DEMO</button>
-              <button type="button" className="main-proyect-subtitle-list-item-botton">GITHUB</button>
+              <button type="button" className="main-proyect-subtitle-list-item-botton">GITHUB
+              </button>
             </div>
           </div>
           <div className="main-proyect-subtitle-list-item">
@@ -81,7 +111,8 @@ export default function Main() {
             <p className="main-proyect-subtitle-list-item-subtitle">example text</p>
             <div className="main-proyect-subtitle-list-item-group-button">
               <button type="button" className="main-proyect-subtitle-list-item-botton">DEMO</button>
-              <button type="button" className="main-proyect-subtitle-list-item-botton">GITHUB</button>
+              <button type="button" className="main-proyect-subtitle-list-item-botton">GITHUB
+              </button>
             </div>
           </div>
           <div className="main-proyect-subtitle-list-item">
@@ -89,12 +120,14 @@ export default function Main() {
             <p className="main-proyect-subtitle-list-item-subtitle">example text</p>
             <div className="main-proyect-subtitle-list-item-group-button">
               <button type="button" className="main-proyect-subtitle-list-item-botton">DEMO</button>
-              <button type="button" className="main-proyect-subtitle-list-item-botton">GITHUB</button>
+              <button type="button" className="main-proyect-subtitle-list-item-botton">GITHUB
+              </button>
             </div>
           </div>
         </div>
       </section>
       <Form />
-    </div>
+      */}
+    </Flex>
   );
 }
