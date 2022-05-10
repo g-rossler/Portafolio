@@ -1,49 +1,54 @@
 import {
-  Flex, Heading, ButtonGroup, Button, Text,
+  Flex,
+  Heading,
+  ButtonGroup,
+  Button,
+  Text,
+  Container,
 } from '@chakra-ui/react';
-import Form from './Form-Contact';
 
 export default function Main() {
   return (
-    <Flex id="main" direction="column">
-      <Flex
-        id="main-introduccion"
-        direction="column"
-        p={3}
-        backgroundColor="blue"
-      >
-        <Heading id="main-introduccion-title">
-          HELLO MY NAME IS GERARDO ROSSLER
-        </Heading>
-        <Text id="main-introduccion-subtitle">
-          I&apos;m a front end developer.
-        </Text>
-        <ButtonGroup id="main-introduccion-group-button">
-          <Button
-            type="button"
-            className="main-introduccion-button button-54"
-            id="button-proyects"
-          >
-            PROJECTS
-          </Button>
-          <Button
-            type="button"
-            className="main-introduccion-button button-54"
-            id="button-github"
-          >
-            GITHUB
-          </Button>
-          <Button
-            type="button"
-            className="main-introduccion-button button-54"
-            id="button-linkedin"
-          >
-            LINKEDIN
-          </Button>
-        </ButtonGroup>
-      </Flex>
+    <Container w="full">
+      <Flex id="main" direction="column">
+        <Flex
+          id="main-introduccion"
+          direction="column"
+          p={3}
+          backgroundColor="blue"
+        >
+          <Heading id="main-introduccion-title">
+            HELLO MY NAME IS GERARDO ROSSLER
+          </Heading>
+          <Text id="main-introduccion-subtitle">
+            I&apos;m a front end developer.
+          </Text>
+          <ButtonGroup id="main-introduccion-group-button">
+            <Button
+              type="button"
+              className="main-introduccion-button button-54"
+              id="button-proyects"
+            >
+              PROJECTS
+            </Button>
+            <Button
+              type="button"
+              className="main-introduccion-button button-54"
+              id="button-github"
+            >
+              GITHUB
+            </Button>
+            <Button
+              type="button"
+              className="main-introduccion-button button-54"
+              id="button-linkedin"
+            >
+              LINKEDIN
+            </Button>
+          </ButtonGroup>
+        </Flex>
 
-      {/*
+        {/*
       <section id="main-about-me">
         <h2 id="main-about-me-title">ABOUT ME</h2>
         <p id="main-about-me-subtitle">I am a software developer</p>
@@ -126,8 +131,8 @@ export default function Main() {
           </div>
         </div>
       </section>
-      <Form />
       */}
-    </Flex>
+      </Flex>
+    </Container>
   );
 }
