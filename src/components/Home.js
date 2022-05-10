@@ -7,41 +7,29 @@ import {
   Container,
 } from '@chakra-ui/react';
 
-export default function Main() {
+export default function Home() {
   return (
-    <Container w="full">
-      <Flex id="main" direction="column">
-        <Flex
-          id="main-introduccion"
-          direction="column"
-          p={3}
-          backgroundColor="blue"
-        >
-          <Heading id="main-introduccion-title">
-            HELLO MY NAME IS GERARDO ROSSLER
-          </Heading>
-          <Text id="main-introduccion-subtitle">
-            I&apos;m a front end developer.
-          </Text>
-          <ButtonGroup id="main-introduccion-group-button">
+    <Container m={0} p={0}>
+      <Flex direction="column">
+        <Flex direction="column" py={30} px={5} backgroundColor="blue" alignItems="center">
+          <Heading textAlign="center" py={10}>HELLO MY NAME IS GERARDO ROSSLER</Heading>
+          <Text pb={20}>I&apos;m a front end developer.</Text>
+          <ButtonGroup>
             <Button
               type="button"
               className="main-introduccion-button button-54"
-              id="button-proyects"
             >
               PROJECTS
             </Button>
             <Button
               type="button"
               className="main-introduccion-button button-54"
-              id="button-github"
             >
               GITHUB
             </Button>
             <Button
               type="button"
               className="main-introduccion-button button-54"
-              id="button-linkedin"
             >
               LINKEDIN
             </Button>
