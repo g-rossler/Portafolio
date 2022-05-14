@@ -1,14 +1,14 @@
-import { Container, ChakraProvider } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import Home from './components/Home';
+import About from './components/About';
+import Proyects from './components/Proyects';
 
-function App() {
+export default function App() {
   return (
-    <ChakraProvider>
-      <Container p={0} m={0}>
-        <Home />
-      </Container>
-    </ChakraProvider>
+    <Container maxWidth="full" h="100vh" m={0} p={0}>
+      <Home />
+      <About />
+      <Proyects />
+    </Container>
   );
 }
-
-export default App;
