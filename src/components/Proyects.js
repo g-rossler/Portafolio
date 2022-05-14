@@ -1,4 +1,12 @@
-function Proyects() { /*
+import { Heading, VStack } from '@chakra-ui/react';
+
+function Proyects() {
+  return (
+    <VStack h="100vh" bg="linear-gradient(0deg, #959595 0%, #7b7b7b 50%, #616161 100%)">
+      <Heading>Proyect</Heading>
+    </VStack>
+  );
+  /*
 
     <section id="main-proyect">
       <h2 id="main-proyect-title">PROYECTS</h2>
@@ -59,6 +67,7 @@ function Proyects() { /*
         </div>
       </div>
     </section>
-    */ }
+    */
+}
 
 export default Proyects;
