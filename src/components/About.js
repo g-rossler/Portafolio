@@ -1,4 +1,14 @@
-function About() { /*
+import {
+  Heading, VStack,
+} from '@chakra-ui/react';
+
+function About() {
+  return (
+    <VStack h="100vh" bg="linear-gradient(0deg, #616161 0%, #525252 50%, #3d3d3d 100%)">
+      <Heading>About Me</Heading>
+    </VStack>
+  );
+  /*
     <section id="main-about-me">
       <h2 id="main-about-me-title">ABOUT ME</h2>
       <p id="main-about-me-subtitle">I am a software developer</p>
