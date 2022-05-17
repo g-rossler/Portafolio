@@ -3,7 +3,7 @@ import { extendTheme, theme as base } from '@chakra-ui/react';
 const theme = extendTheme({
   fonts: {
     heading: `Koulen, ${base.fonts?.heading}`,
-    body: `Fira Sans, ${base.fonts?.body}`,
+    body: `Bebas Neue, ${base.fonts?.body}`,
   },
   components: {
     Button: {
