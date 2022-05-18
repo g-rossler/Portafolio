@@ -36,14 +36,6 @@ const theme = extendTheme({
             border: '3px solid #FFFFFF',
             boxShadow: '1px 1px 0px 0px #FFFFFF, 2px 2px 0px 0px #FFFFFF, 3px 3px 0px 0px #FFFFFF, 4px 4px 0px 0px #FFFFFF, 5px 5px 0px 0px #FFFFFF',
           },
-          /*
-
-        */
-
-        },
-        secondary: {
-          rounded: '1',
-          bg: 'yellow',
         },
       },
     },
