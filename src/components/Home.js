@@ -25,7 +25,7 @@ function Home() {
   const animation = `${animationKeyframes} 20s linear infinite`;
 
   return (
-    <VStack minW={80} bg="black" pt={100} px={10} h="100vh">
+    <VStack minW={80} bg="rgb(32 32 32)" pt={100} px={10} h="100vh">
       <HStack spacing={10}>
         <VStack w="full" alignItems="flex-start" minW={600}>
           <Text
