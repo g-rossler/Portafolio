@@ -30,7 +30,8 @@ function Home() {
       bg="rgb(32 32 32)"
       py={[14, 20, 24]}
       px={[5, 10, 14]}
-      h="100vh"
+      h="full"
+      minH="100vh"
     >
       <HStack spacing={10} w="full">
         <VStack w="full" alignItems="flex-start">
@@ -65,18 +66,28 @@ function Home() {
           </Text>
         </VStack>
         <Box align="center" ml={0} w="full">
-          <Image
-            src={Logo}
-            className="logo"
-            animation={animation}
-          />
+          <Image src={Logo} className="logo" animation={animation} />
         </Box>
       </HStack>
 
-      <Stack alignItems="center" pt={[16, 10, 14]} direction={{ base: 'column', md: 'row' }} spacing={3}>
-        <Button type="button" variant="primary">PROJECTS</Button>
-        <Button type="button" variant="primary">GITHUB</Button>
-        <Button type="button" variant="primary">LINKEDIN</Button>
+      <Stack
+        justify="center"
+        align="center"
+        pt={[16, 10, 14]}
+        direction={{ base: 'column', md: 'row' }}
+        spacing={3}
+        h="full"
+        w="full"
+      >
+        <Button type="button" variant="primary">
+          PROJECTS
+        </Button>
+        <Button type="button" variant="primary">
+          GITHUB
+        </Button>
+        <Button type="button" variant="primary">
+          LINKEDIN
+        </Button>
       </Stack>
     </VStack>
   );
