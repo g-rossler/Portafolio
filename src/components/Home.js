@@ -3,11 +3,11 @@ import {
   Heading,
   Button,
   Text,
-  ButtonGroup,
   Stack,
   Image,
   HStack,
   keyframes,
+  Box,
 } from '@chakra-ui/react';
 
 import Logo from '../image/react.svg';
@@ -25,15 +25,22 @@ function Home() {
   const animation = `${animationKeyframes} 20s linear infinite`;
 
   return (
-    <VStack minW={80} bg="black" pt={100} px={10} h="100vh">
-      <HStack spacing={10}>
-        <VStack w="full" alignItems="flex-start" minW={600}>
+    <VStack
+      minW="full"
+      bg="rgb(32 32 32)"
+      py={[14, 20, 24]}
+      px={[5, 10, 14]}
+      h="full"
+      minH="100vh"
+    >
+      <HStack spacing={10} w="full">
+        <VStack w="full" alignItems="flex-start">
           <Text
             pl={0.5}
             color="white"
             letterSpacing="1.5px"
             textAlign="start"
-            fontSize="3xl"
+            fontSize={['2xl', '3xl', '4xl']}
             w="full"
           >
             My name is:
@@ -42,7 +49,7 @@ function Home() {
             w="full"
             textAlign="start"
             color="#5FE2D1"
-            size="4xl"
+            fontSize={['5xl', '6xl', '7xl']}
             letterSpacing="3px"
           >
             Rossler Gerardo
@@ -51,29 +58,36 @@ function Home() {
             letterSpacing="1.5px"
             pl={1.5}
             color="white"
-            fontSize="3xl"
+            fontSize={['2xl', '3xl', '4xl']}
             textAlign="start"
             w="full"
-            pt={50}
           >
             I&apos;m a Front End Developer.
           </Text>
         </VStack>
-        <Image
-          src={Logo}
-          h="full"
-          w="full"
-          className="logo"
-          animation={animation}
-        />
+        <Box align="center" ml={0} w="full">
+          <Image src={Logo} className="logo" animation={animation} />
+        </Box>
       </HStack>
 
-      <Stack alignItems="center" pt={20}>
-        <ButtonGroup spacing={10} variant="primary">
-          <Button type="button">PROJECTS</Button>
-          <Button type="button">GITHUB</Button>
-          <Button type="button">LINKEDIN</Button>
-        </ButtonGroup>
+      <Stack
+        justify="center"
+        align="center"
+        pt={[16, 10, 14]}
+        direction={{ base: 'column', md: 'row' }}
+        spacing={3}
+        h="full"
+        w="full"
+      >
+        <Button type="button" variant="primary">
+          PROJECTS
+        </Button>
+        <Button type="button" variant="primary">
+          GITHUB
+        </Button>
+        <Button type="button" variant="primary">
+          LINKEDIN
+        </Button>
       </Stack>
     </VStack>
   );

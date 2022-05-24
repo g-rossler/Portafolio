@@ -1,11 +1,38 @@
 import {
-  Heading, VStack,
+
+  Heading,
+  VStack,
+  Stack,
+  Text,
+  ButtonGroup,
+  Button,
+
 } from '@chakra-ui/react';
 
 function About() {
   return (
-    <VStack h="100vh" bg="linear-gradient(0deg, #616161 0%, #525252 50%, #3d3d3d 100%)">
+    <VStack
+      border="1px solid white"
+      minW="full"
+      bg="rgb(32 32 32)"
+      py={[14, 20, 24]}
+      px={[5, 10, 14]}
+      h="full"
+      minH="100vh"
+    >
       <Heading>About Me</Heading>
+      <Stack direction={{ base: 'column', md: 'row' }} w="full" align="center" justify="space">
+        <Stack>
+          <Text>Hola</Text>
+        </Stack>
+        <VStack>
+          <Heading>TECHNOLOGIES</Heading>
+          <ButtonGroup variant="outline" spacing="6">
+            <Button colorScheme="blue">Save</Button>
+            <Button>Cancel</Button>
+          </ButtonGroup>
+        </VStack>
+      </Stack>
     </VStack>
   );
   /*
@@ -30,6 +57,7 @@ function About() {
           <div className="main-technologies-list-item">BootStrap</div>
         </div>
       </div>
-</section> */ }
+</section> */
+}
 
 export default About;
