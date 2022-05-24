@@ -1,10 +1,12 @@
 import {
+
   Heading,
   VStack,
   Stack,
   Text,
   ButtonGroup,
   Button,
+
 } from '@chakra-ui/react';
 
 function About() {
