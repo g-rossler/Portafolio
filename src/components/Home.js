@@ -73,7 +73,7 @@ function Home() {
       <Stack
         justify="center"
         align="center"
-        pt={[16, 10, 14]}
+        pt={[16, 10, 20]}
         direction={{ base: 'column', md: 'row' }}
         spacing={3}
         h="full"
