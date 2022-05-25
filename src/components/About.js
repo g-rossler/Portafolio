@@ -1,63 +1,53 @@
 import {
-
   Heading,
   VStack,
-  Stack,
   Text,
-  ButtonGroup,
   Button,
-
+  Flex,
+  Stack,
 } from '@chakra-ui/react';
 
 function About() {
   return (
     <VStack
-      border="1px solid white"
       minW="full"
       bg="rgb(32 32 32)"
-      py={[14, 20, 24]}
+      py={0}
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
+      spacing={10}
     >
       <Heading>About Me</Heading>
-      <Stack direction={{ base: 'column', md: 'row' }} w="full" align="center" justify="space">
-        <Stack>
-          <Text>Hola</Text>
-        </Stack>
-        <VStack>
-          <Heading>TECHNOLOGIES</Heading>
-          <ButtonGroup variant="outline" spacing="6">
-            <Button colorScheme="blue">Save</Button>
-            <Button>Cancel</Button>
-          </ButtonGroup>
-        </VStack>
+      <Text w="full">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </Text>
+      <Heading>TECHNOLOGIES</Heading>
+      <Stack w="full" maxW="100%">
+        <Flex m="auto" h="full" maxW="100%" flexWrap="wrap" alignItems="center" justifyContent="center">
+          <Button variant="terciary">JavaScript</Button>
+          <Button variant="terciary">HTML</Button>
+          <Button variant="terciary">React</Button>
+          <Button variant="terciary">CSS</Button>
+          <Button variant="terciary">Node.JS</Button>
+          <Button variant="terciary">Cypress</Button>
+          <Button variant="terciary">jQuery</Button>
+          <Button variant="terciary">Git</Button>
+          <Button variant="terciary">GitHub</Button>
+          <Button variant="terciary">Jest</Button>
+          <Button variant="terciary">BootStrap</Button>
+          <Button variant="terciary">Chakra UI</Button>
+          <Button variant="terciary">React Testing Libraries</Button>
+        </Flex>
       </Stack>
     </VStack>
   );
-  /*
-    <section id="main-about-me">
-      <h2 id="main-about-me-title">ABOUT ME</h2>
-      <p id="main-about-me-subtitle">I am a software developer</p>
-      <div id="main-technologies">
-        <h2 id="main-technologies-title">TECHNOLOGIES</h2>
-        <div id="main-technologies-list">
-          <div className="main-technologies-list-item">HTML</div>
-          <div className="main-technologies-list-item">JavaScript</div>
-          <div className="main-technologies-list-item">CSS</div>
-          <div className="main-technologies-list-item">React</div>
-          <div className="main-technologies-list-item">Node.JS</div>
-          <div className="main-technologies-list-item">Cypress</div>
-          <div className="main-technologies-list-item">NPM</div>
-          <div className="main-technologies-list-item">Babel</div>
-          <div className="main-technologies-list-item">jQuery</div>
-          <div className="main-technologies-list-item">Git</div>
-          <div className="main-technologies-list-item">GitHub</div>
-          <div className="main-technologies-list-item">Jest</div>
-          <div className="main-technologies-list-item">BootStrap</div>
-        </div>
-      </div>
-</section> */
 }
 
 export default About;
