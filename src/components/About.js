@@ -5,6 +5,7 @@ import {
   Button,
   Flex,
   Stack,
+  Link,
 } from '@chakra-ui/react';
 
 function About() {
@@ -16,34 +17,99 @@ function About() {
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
-      spacing={10}
     >
-      <Heading>About Me</Heading>
-      <Text w="full">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <Heading color="#5FE2D1" fontSize={['3xl', '5xl', '5xl']}>
+        About Me
+      </Heading>
+      <Text
+        w="80%"
+        textAlign="center"
+        fontSize={['xl', '2xl', '2xl']}
+        pt={10}
+        fontFamily="Roboto Slab"
+      >
+        Hi! I&apos;m Gerardo Rossler, I&apos;ve been close to a computer since
+        an early age, and been passionate about it ever since.
       </Text>
-      <Heading>TECHNOLOGIES</Heading>
+      <Text
+        w="80%"
+        textAlign="center"
+        fontSize={['xl', '2xl', '2xl']}
+        mt="0px"
+        fontFamily="Roboto Slab"
+      >
+        I&apos;m a self-taught Software Developer based in Argentina, currently
+        looking to get my first job as a front end developer.
+      </Text>
+      <Text
+        w="80%"
+        textAlign="center"
+        fontSize={['xl', '2xl', '2xl']}
+        mt="0px"
+        fontFamily="Roboto Slab"
+      >
+        I love finding solutions to problems and working in a team. Get in touch
+        if you&apos;d like to have a chat.
+      </Text>
+      <Heading color="#5FE2D1" pt={10} fontSize={['3xl', '5xl', '5xl']}>
+        TECHNOLOGIES
+      </Heading>
       <Stack w="full" maxW="100%">
-        <Flex m="auto" h="full" maxW="100%" flexWrap="wrap" alignItems="center" justifyContent="center">
-          <Button variant="terciary">JavaScript</Button>
-          <Button variant="terciary">HTML</Button>
-          <Button variant="terciary">React</Button>
-          <Button variant="terciary">CSS</Button>
-          <Button variant="terciary">Node.JS</Button>
-          <Button variant="terciary">Cypress</Button>
-          <Button variant="terciary">jQuery</Button>
-          <Button variant="terciary">Git</Button>
-          <Button variant="terciary">GitHub</Button>
-          <Button variant="terciary">Jest</Button>
-          <Button variant="terciary">BootStrap</Button>
-          <Button variant="terciary">Chakra UI</Button>
-          <Button variant="terciary">React Testing Libraries</Button>
+        <Flex
+          m="auto"
+          h="full"
+          maxW="100%"
+          flexWrap="wrap"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Button variant="terciary">
+            <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+              JavaScript
+            </Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+              HTML
+            </Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://reactjs.org/">React</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+              CSS
+            </Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://nodejs.org/en/">Node.JS</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://www.cypress.io/">Cypress</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://jquery.com/">jQuery</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://git-scm.com/">Git</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://github.com/">GitHub</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://jestjs.io/">Jest</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://getbootstrap.com/">BootStrap</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://chakra-ui.com/">Chakra UI</Link>
+          </Button>
+          <Button variant="terciary">
+            <Link href="https://testing-library.com/docs/react-testing-library/intro/">
+              React Testing Libraries
+            </Link>
+          </Button>
         </Flex>
       </Stack>
     </VStack>
