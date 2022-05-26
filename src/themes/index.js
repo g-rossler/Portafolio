@@ -96,7 +96,7 @@ const theme = extendTheme({
           },
         },
         terciary: {
-          m: '5px',
+          m: '10px',
           fontFamily: 'Koulen',
           fontSize: '18px',
           letterSpacing: '2px',
@@ -108,7 +108,7 @@ const theme = extendTheme({
           boxShadow:
             '1px 1px 0px 0px #5FE2D1, 2px 2px 0px 0px #5FE2D1, 3px 3px 0px 0px #5FE2D1, 4px 4px 0px 0px #5FE2D1, 5px 5px 0px 0px #5FE2D1',
           userSelect: 'none',
-          minW: '200px',
+          minW: '240px',
           bg: 'white',
           _active: {
             boxShadow: '0px 0px 0px 0px',
