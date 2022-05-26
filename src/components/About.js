@@ -18,7 +18,7 @@ function About() {
       h="full"
       minH="100vh"
     >
-      <Heading color="#5FE2D1" fontSize={['3xl', '5xl', '5xl']}>
+      <Heading color="#5FE2D1" fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px">
         About Me
       </Heading>
       <Text
@@ -51,7 +51,7 @@ function About() {
         I love finding solutions to problems and working in a team. Get in touch
         if you&apos;d like to have a chat.
       </Text>
-      <Heading color="#5FE2D1" pt={10} fontSize={['3xl', '5xl', '5xl']}>
+      <Heading color="#5FE2D1" pt={10} fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px">
         TECHNOLOGIES
       </Heading>
       <Stack w="full" maxW="100%">
