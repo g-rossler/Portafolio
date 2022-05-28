@@ -54,7 +54,7 @@ function About() {
       <Heading color="#5FE2D1" pt={10} fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px">
         TECHNOLOGIES
       </Heading>
-      <Stack w="full" maxW="100%">
+      <Stack w="full" maxW="100%" pt={10}>
         <Flex
           m="auto"
           h="full"
