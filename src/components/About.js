@@ -18,7 +18,7 @@ function About() {
       h="full"
       minH="100vh"
     >
-      <Heading color="#5FE2D1" fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px">
+      <Heading color="#5FE2D1" fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px" as="u">
         About Me
       </Heading>
       <Text
@@ -27,6 +27,7 @@ function About() {
         fontSize={['xl', '2xl', '2xl']}
         pt={10}
         fontFamily="Roboto Slab"
+        color="white"
       >
         Hi! I&apos;m Gerardo Rossler, I&apos;ve been close to a computer since
         an early age, and been passionate about it ever since.
@@ -37,6 +38,7 @@ function About() {
         fontSize={['xl', '2xl', '2xl']}
         mt="0px"
         fontFamily="Roboto Slab"
+        color="white"
       >
         I&apos;m a self-taught Software Developer based in Argentina, currently
         looking to get my first job as a front end developer.
@@ -47,11 +49,12 @@ function About() {
         fontSize={['xl', '2xl', '2xl']}
         mt="0px"
         fontFamily="Roboto Slab"
+        color="white"
       >
         I love finding solutions to problems and working in a team. Get in touch
         if you&apos;d like to have a chat.
       </Text>
-      <Heading color="#5FE2D1" pt={10} fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px">
+      <Heading color="#5FE2D1" pt={10} fontSize={['3xl', '5xl', '5xl']} letterSpacing="3px" as="u">
         TECHNOLOGIES
       </Heading>
       <Stack w="full" maxW="100%" pt={10}>
