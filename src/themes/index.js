@@ -18,6 +18,13 @@ const theme = extendTheme({
     body: `Bebas Neue, ${base.fonts?.body}`,
   },
   components: {
+    Text: {
+      variants: {
+        primary: {
+          fontFamily: 'Ubuntu Mono',
+        },
+      },
+    },
     Button: {
       variants: {
         primary: {
