@@ -11,7 +11,7 @@ https://rosslergerardo.netlify.app/
 
 ## Screenshot
 
-![Portfolio Screenshot](https://i.ibb.co/rdqFfjF/portafolio.png)
+![Portfolio Screenshot](https://raw.githubusercontent.com/g-rossler/Portafolio/main/src/image/portafolio.png?token=GHSAT0AAAAAABSYXPM4RDYCKRPCDGPU5JEOYVUUNWQ)
 
 
 ## Lessons Learned
