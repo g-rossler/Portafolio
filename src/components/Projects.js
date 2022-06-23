@@ -20,6 +20,8 @@ import {
 } from '@chakra-ui/react';
 
 import LogoPokedex from '../image/pokedex.png';
+import LogoCryptoFutbol from '../image/cryptoFutbol.png';
+import LogoPortafolio from '../image/portafolio.png';
 
 const buttonKeyframes = keyframes`
 0% {
@@ -34,7 +36,9 @@ const buttonKeyframes = keyframes`
 `;
 
 function Projects() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const pokedexModal = useDisclosure();
+  const cryptoFutbolModal = useDisclosure();
+  const portafolioModal = useDisclosure();
 
   return (
     <VStack
@@ -133,10 +137,14 @@ function Projects() {
             <Button variant="terciarySmall">
               <Link href="https://github.com/g-rossler/Pokedex">GITHUB</Link>
             </Button>
-            <Button variant="terciarySmall" onClick={onOpen}>
+            <Button variant="terciarySmall" onClick={pokedexModal.onOpen}>
               +INFO
             </Button>
-            <Modal isOpen={isOpen} onClose={onClose} size="md">
+            <Modal
+              isOpen={pokedexModal.isOpen}
+              onClose={pokedexModal.onClose}
+              size="md"
+            >
               <ModalOverlay />
               <ModalContent>
                 <ModalHeader textAlign="center" fontSize="4xl">
@@ -165,7 +173,12 @@ function Projects() {
                 </ModalBody>
 
                 <ModalFooter>
-                  <Button colorScheme="blue" mr={3} onClick={onClose} w="full">
+                  <Button
+                    colorScheme="blue"
+                    mr={3}
+                    onClick={pokedexModal.onClose}
+                    w="full"
+                  >
                     Close
                   </Button>
                 </ModalFooter>
@@ -180,7 +193,7 @@ function Projects() {
         borderRadius="10px"
         boxSizing="border-box"
         color="rgb(255, 255, 255)"
-        padding="0.6em 2em"
+        padding="2em 2em"
         position="relative"
         zIndex="0"
         w="90%"
@@ -217,22 +230,101 @@ function Projects() {
           maxW={{ base: '100%', md: '50%' }}
           minW="50%"
         >
-          <Image src={LogoPokedex} />
+          <Image src={LogoCryptoFutbol} border="1px solid gray" />
         </Stack>
         <VStack w="full" pt={3} minH="100%">
           <Heading textAlign="center" fontSize={['2xl', '2xl', '3xl']}>
-            Pokedex
+            CryptoFutbol
           </Heading>
-          <Stack direction="row">
-            <Badge colorScheme="blue">JavaScript</Badge>
-            <Badge colorScheme="cyan">BootStrap</Badge>
-            <Badge colorScheme="twitter">API</Badge>
+          <Stack
+            direction="row"
+            maxW="100%"
+            display="flex"
+            flexWrap="wrap"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Badge variant="subtle" colorScheme="yellow" fontSize="1em">
+              JavaScript
+            </Badge>
+            <Badge variant="subtle" colorScheme="blue" fontSize="1em">
+              CSS
+            </Badge>
+            <Badge variant="subtle" colorScheme="orange" fontSize="1em" m="5">
+              HTML 5
+            </Badge>
+            <Badge variant="subtle" colorScheme="purple" fontSize="1em">
+              BootStrap
+            </Badge>
+            <Badge variant="subtle" fontSize="1em">
+              REST API
+            </Badge>
+            <Badge variant="subtle" fontSize="1em" colorScheme="linkedin">
+              Stellar Blockchain
+            </Badge>
+            <Badge variant="subtle" fontSize="1em" colorScheme="pink">
+              Parcel
+            </Badge>
           </Stack>
-          <Text>TO DO</Text>
-          <HStack align="end" h="full" py={3}>
-            <Button variant="terciarySmall">DEMO</Button>
-            <Button variant="terciarySmall">GITHUB</Button>
-            <Button variant="terciarySmall">+INFO</Button>
+          <Text fontSize="xl" w="80%" paddingTop="0.8rem" textAlign="center">
+            Manage your own football team, play against your friends and win
+            tokens on Stellar blockchain.
+          </Text>
+          <HStack align="end" h="full" py={3} spacing="24px">
+            <Button variant="terciarySmall">
+              <Link href="https://crypto-futbol.vercel.app/">DEMO</Link>
+            </Button>
+            <Button variant="terciarySmall">
+              <Link href="https://github.com/g-rossler/CryptoFutbol">
+                GITHUB
+              </Link>
+            </Button>
+            <Button variant="terciarySmall" onClick={cryptoFutbolModal.onOpen}>
+              +INFO
+            </Button>
+            <Modal
+              isOpen={cryptoFutbolModal.isOpen}
+              onClose={cryptoFutbolModal.onClose}
+              size="md"
+            >
+              <ModalOverlay />
+              <ModalContent>
+                <ModalHeader textAlign="center" fontSize="4xl">
+                  CryptoFutbol
+                </ModalHeader>
+                <ModalCloseButton />
+                <ModalBody>
+                  <Text fontSize="xl" variant="primary">
+                    This project was made with 2 friends for the first
+                    r/ArgentinaPrograma hackathon, where we came third. The task
+                    of the hackathon was to make an app that use Stellar
+                    blockchain, so we made a game where you can manage a
+                    football team, play tournaments against other people, buy
+                    and sell players, improve your club and use the token we
+                    created call $FTOK (Futbol Token).
+                  </Text>
+                  <Text fontSize="xl" pt="1rem" variant="primary">
+                    The biggest problem we had working in this project was the
+                    time, because we only have 2 day to finish the project, and
+                    there were a lot of things we want to include in the demo,
+                    but we didn&apos;t have the time. It was a wonderful
+                    experience because I enjoy working in a team and learning
+                    about blockchain technology.
+                  </Text>
+                </ModalBody>
+
+                <ModalFooter>
+                  <Button
+                    colorScheme="blue"
+                    mr={3}
+                    onClick={cryptoFutbolModal.onClose}
+                    w="full"
+                  >
+                    Close
+                  </Button>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
           </HStack>
         </VStack>
       </Stack>
@@ -242,7 +334,7 @@ function Projects() {
         borderRadius="10px"
         boxSizing="border-box"
         color="rgb(255, 255, 255)"
-        padding="0.6em 2em"
+        padding="2em 2em"
         position="relative"
         zIndex="0"
         w="90%"
@@ -279,22 +371,87 @@ function Projects() {
           maxW={{ base: '100%', md: '50%' }}
           minW="50%"
         >
-          <Image src={LogoPokedex} />
+          <Image src={LogoPortafolio} border="1px solid gray" />
         </Stack>
         <VStack w="full" pt={3} minH="100%">
           <Heading textAlign="center" fontSize={['2xl', '2xl', '3xl']}>
-            Pokedex
+            Portfolio
           </Heading>
-          <Stack direction="row">
-            <Badge colorScheme="blue">JavaScript</Badge>
-            <Badge colorScheme="cyan">BootStrap</Badge>
-            <Badge colorScheme="twitter">API</Badge>
+          <Stack
+            direction="row"
+            maxW="100%"
+            display="flex"
+            flexWrap="wrap"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Badge variant="subtle" colorScheme="yellow" fontSize="1em">
+              JavaScript
+            </Badge>
+            <Badge variant="subtle" colorScheme="blue" fontSize="1em">
+              CSS
+            </Badge>
+            <Badge variant="subtle" colorScheme="orange" fontSize="1em" m="5">
+              HTML 5
+            </Badge>
+            <Badge variant="subtle" colorScheme="purple" fontSize="1em">
+              Chakra UI
+            </Badge>
+            <Badge variant="subtle" colorScheme="blue" fontSize="1em">
+              React
+            </Badge>
           </Stack>
-          <Text>TO DO</Text>
-          <HStack align="end" h="full" py={3}>
-            <Button variant="terciarySmall">DEMO</Button>
-            <Button variant="terciarySmall">GITHUB</Button>
-            <Button variant="terciarySmall">+INFO</Button>
+          <Text fontSize="xl" w="80%" paddingTop="0.8rem" textAlign="center">
+            My Portfolio
+          </Text>
+          <HStack align="end" h="full" py={3} spacing="24px">
+            <Button variant="terciarySmall">
+              <Link href="https://github.com/g-rossler/Portafolio">GITHUB</Link>
+            </Button>
+            <Button variant="terciarySmall" onClick={portafolioModal.onOpen}>
+              +INFO
+            </Button>
+            <Modal
+              isOpen={portafolioModal.isOpen}
+              onClose={portafolioModal.onClose}
+              size="md"
+            >
+              <ModalOverlay />
+              <ModalContent>
+                <ModalHeader textAlign="center" fontSize="4xl">
+                  Portfolio
+                </ModalHeader>
+                <ModalCloseButton />
+                <ModalBody>
+                  <Text fontSize="xl" variant="primary">
+                    This was a big project for me, I use React and Chakra UI to
+                    make it. In the beginning I was thinking of creating my
+                    portfolio with JavaScript, but at that moment I was just
+                    starting to learn React and I love it.
+                  </Text>
+                  <Text fontSize="xl" pt="1rem" variant="primary">
+                    A little later, one of my friends was talking about how good
+                    was Chakra UI, so I try it and I knew I need it in my
+                    portfolio.
+                  </Text>
+                  <Text fontSize="xl" pt="1rem" variant="primary">
+                    The challenge in this project was the style of the web, I
+                    did several versions until it look like I want it.
+                  </Text>
+                </ModalBody>
+
+                <ModalFooter>
+                  <Button
+                    colorScheme="blue"
+                    mr={3}
+                    onClick={portafolioModal.onClose}
+                    w="full"
+                  >
+                    Close
+                  </Button>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
           </HStack>
         </VStack>
       </Stack>
