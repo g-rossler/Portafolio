@@ -65,7 +65,7 @@ function Home() {
             I&apos;m a Front End Developer.
           </Text>
         </VStack>
-        <Box align="center" ml={0} w="full">
+        <Box align="center" ml={0} w="full" p="10px">
           <Image src={Logo} className="logo" animation={animation} />
         </Box>
       </HStack>
