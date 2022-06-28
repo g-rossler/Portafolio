@@ -17,6 +17,7 @@ function About() {
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
+      maxW="100vw"
     >
       <Heading
         color="#5FE2D1"
