@@ -27,7 +27,6 @@ function Home() {
 
   return (
     <VStack
-      minW="full"
       bg="rgb(32 32 32)"
       py={[14, 20, 24]}
       px={[5, 10, 14]}

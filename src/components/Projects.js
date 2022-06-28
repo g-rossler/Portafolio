@@ -50,6 +50,7 @@ function Projects() {
       minH="100vh"
       spacing={10}
       id="proyectos"
+      maxW="100vw"
     >
       <Heading
         pb={10}
