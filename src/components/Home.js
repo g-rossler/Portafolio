@@ -8,6 +8,7 @@ import {
   HStack,
   keyframes,
   Box,
+  Link,
 } from '@chakra-ui/react';
 
 import Logo from '../image/react.svg';
@@ -79,15 +80,23 @@ function Home() {
         h="full"
         w="full"
       >
-        <Button type="button" variant="primary">
-          PROJECTS
-        </Button>
-        <Button type="button" variant="primary">
-          GITHUB
-        </Button>
-        <Button type="button" variant="primary">
-          LINKEDIN
-        </Button>
+        <Link href="#proyectos">
+          <Button type="button" variant="primary">
+            PROJECTS
+          </Button>
+        </Link>
+
+        <Link href="https://github.com/g-rossler">
+          <Button type="button" variant="primary">
+            GITHUB
+          </Button>
+        </Link>
+
+        <Link href="https://www.linkedin.com/in/gerardo-rossler/">
+          <Button type="button" variant="primary">
+            LINKEDIN
+          </Button>
+        </Link>
       </Stack>
     </VStack>
   );
