@@ -49,6 +49,7 @@ function Projects() {
       h="full"
       minH="100vh"
       spacing={10}
+      id="proyectos"
     >
       <Heading
         pb={10}
@@ -131,12 +132,12 @@ function Projects() {
             pokemons
           </Text>
           <HStack align="end" h="full" py={3} spacing="24px">
-            <Button variant="terciarySmall">
-              <Link href="https://g-rossler.github.io/Pokedex/">DEMO</Link>
-            </Button>
-            <Button variant="terciarySmall">
-              <Link href="https://github.com/g-rossler/Pokedex">GITHUB</Link>
-            </Button>
+            <Link href="https://g-rossler.github.io/Pokedex/">
+              <Button variant="terciarySmall">DEMO</Button>
+            </Link>
+            <Link href="https://github.com/g-rossler/Pokedex">
+              <Button variant="terciarySmall">GITHUB</Button>
+            </Link>
             <Button variant="terciarySmall" onClick={pokedexModal.onOpen}>
               +INFO
             </Button>
@@ -271,14 +272,14 @@ function Projects() {
             tokens on Stellar blockchain.
           </Text>
           <HStack align="end" h="full" py={3} spacing="24px">
-            <Button variant="terciarySmall">
-              <Link href="https://crypto-futbol.vercel.app/">DEMO</Link>
-            </Button>
-            <Button variant="terciarySmall">
-              <Link href="https://github.com/g-rossler/CryptoFutbol">
-                GITHUB
-              </Link>
-            </Button>
+            <Link href="https://crypto-futbol.vercel.app/">
+              <Button variant="terciarySmall">DEMO</Button>
+            </Link>
+
+            <Link href="https://github.com/g-rossler/CryptoFutbol">
+              <Button variant="terciarySmall">GITHUB</Button>
+            </Link>
+
             <Button variant="terciarySmall" onClick={cryptoFutbolModal.onOpen}>
               +INFO
             </Button>
@@ -405,9 +406,10 @@ function Projects() {
             My Portfolio
           </Text>
           <HStack align="end" h="full" py={3} spacing="24px">
-            <Button variant="terciarySmall">
-              <Link href="https://github.com/g-rossler/Portafolio">GITHUB</Link>
-            </Button>
+            <Link href="https://github.com/g-rossler/Portafolio">
+              <Button variant="terciarySmall">GITHUB</Button>
+            </Link>
+
             <Button variant="terciarySmall" onClick={portafolioModal.onOpen}>
               +INFO
             </Button>
