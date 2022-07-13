@@ -13,6 +13,13 @@ const buttonKeyframes = keyframes`
 `;
 
 const theme = extendTheme({
+  styles: {
+    global: {
+      html: {
+        scrollBehavior: 'smooth',
+      },
+    },
+  },
   fonts: {
     heading: `Koulen, ${base.fonts?.heading}`,
     body: `Bebas Neue, ${base.fonts?.body}`,
