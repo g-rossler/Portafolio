@@ -11,13 +11,12 @@ import {
 function About() {
   return (
     <VStack
-      minW="full"
       bg="rgb(32 32 32)"
-      py={0}
+      py={10}
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
-      maxW="100vw"
+      maxW="1000px"
     >
       <Heading
         color="#5FE2D1"
@@ -92,6 +91,9 @@ function About() {
           </Link>
           <Link href="https://nodejs.org/en/">
             <Button variant="terciary">Node.JS</Button>
+          </Link>
+          <Link href="https://www.typescriptlang.org/">
+            <Button variant="terciary">TypeScript</Button>
           </Link>
           <Link href="https://www.cypress.io/">
             <Button variant="terciary">Cypress</Button>
