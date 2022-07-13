@@ -32,6 +32,9 @@ function Home() {
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
+      maxW="1000px"
+      align="center"
+      justify="center"
     >
       <HStack spacing={10} w="full">
         <VStack w="full" alignItems="flex-start">
