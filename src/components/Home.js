@@ -28,13 +28,11 @@ function Home() {
   return (
     <VStack
       bg="rgb(32 32 32)"
-      py={[14, 20, 24]}
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
       maxW="1000px"
-      align="center"
-      justify="center"
+      justify="space-evenly"
     >
       <HStack spacing={10} w="full">
         <VStack w="full" alignItems="flex-start">
