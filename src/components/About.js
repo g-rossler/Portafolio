@@ -15,6 +15,7 @@ function About() {
       py={10}
       px={[5, 10, 14]}
       h="full"
+      m="auto"
       minH="100vh"
       maxW="1000px"
     >

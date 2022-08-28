@@ -33,7 +33,7 @@ const buttonKeyframes = keyframes`
 
 function Project({
   logo,
-  titulo,
+  title,
   badge,
   preview,
   modalTitle,
@@ -54,6 +54,7 @@ function Project({
       position="relative"
       zIndex="0"
       minH="350px"
+      minW="350px"
       _before={{
         minH: '350px',
         content: '""',
@@ -93,7 +94,7 @@ function Project({
       </Stack>
       <VStack w="full" pt={3} minH="100%">
         <Heading textAlign="center" fontSize={['2xl', '2xl', '3xl']}>
-          {titulo}
+          {title}
         </Heading>
         <Stack
           direction="row"
@@ -105,7 +106,7 @@ function Project({
           minH="60px"
         >
           {badge.map((elem) => (
-            <Badge variant="subtle" colorScheme={elem.color} fontSize="1em">
+            <Badge variant="subtle" colorScheme={elem.color} fontSize="1em" key={elem.text}>
               {elem.text}
             </Badge>
           ))}
@@ -113,10 +114,13 @@ function Project({
         <Text fontSize="xl" w="80%" paddingTop="0.8rem" textAlign="center">
           {preview}
         </Text>
-        <HStack align="end" h="full" py={3} spacing="24px">
+        <HStack align="end" h="full" py={3} spacing="10px">
+          {linkDemo && (
           <Link href={linkDemo}>
             <Button variant="terciarySmall">DEMO</Button>
           </Link>
+          )}
+
           <Link href={linkGithub}>
             <Button variant="terciarySmall">GITHUB</Button>
           </Link>
@@ -132,7 +136,7 @@ function Project({
               <ModalCloseButton />
               <ModalBody>
                 {modalText.map((elem) => (
-                  <Text fontSize="xl" pt="1rem" variant="primary">
+                  <Text fontSize="xl" pt="1rem" variant="primary" key={elem}>
                     {elem}
                   </Text>
                 ))}

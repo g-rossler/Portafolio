@@ -11,7 +11,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 
-import Logo from '../image/react.svg';
+import logo from '../image/react.svg';
 import '../themes/styles.css';
 
 function Home() {
@@ -30,6 +30,7 @@ function Home() {
       bg="rgb(32 32 32)"
       px={[5, 10, 14]}
       h="full"
+      m="auto"
       minH="100vh"
       maxW="1000px"
       justify="space-evenly"
@@ -67,7 +68,7 @@ function Home() {
           </Text>
         </VStack>
         <Box align="center" ml={0} w="full" p="10px">
-          <Image src={Logo} className="logo" animation={animation} />
+          <Image src={logo} className="logo" animation={animation} />
         </Box>
       </HStack>
 
