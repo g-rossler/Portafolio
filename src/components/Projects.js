@@ -15,7 +15,7 @@ function Projects() {
       pb={20}
       px={[5, 10, 14]}
       spacing={10}
-      id="proyectos"
+      id="projects"
       h="full"
       minH="100vh"
       maxW="1000px"
