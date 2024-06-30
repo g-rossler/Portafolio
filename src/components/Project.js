@@ -17,7 +17,7 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
 const buttonKeyframes = keyframes`
 0% {
@@ -45,7 +45,7 @@ function Project({
 
   return (
     <Stack
-      direction={{ base: 'column', md: 'row' }}
+      direction={{ base: "column", md: "row" }}
       border="none"
       borderRadius="10px"
       boxSizing="border-box"
@@ -55,44 +55,46 @@ function Project({
       zIndex="0"
       minH="350px"
       _before={{
-        minH: '350px',
+        minH: "350px",
+        // eslint-disable-next-line quotes
         content: '""',
-        bg: 'linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000)',
-        position: 'absolute',
-        top: '-2px',
-        left: '-2px',
-        backgroundSize: '400%',
-        zIndex: '-1',
-        filter: 'blur(5px)',
-        width: 'calc(100% + 4px)',
-        height: 'calc(100% + 4px)',
+        bg: "linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000)",
+        position: "absolute",
+        top: "-2px",
+        left: "-2px",
+        backgroundSize: "400%",
+        zIndex: "-1",
+        filter: "blur(5px)",
+        width: "calc(100% + 4px)",
+        height: "calc(100% + 4px)",
         animation: `${buttonKeyframes} 50s linear infinite`,
-        transition: 'opacity 0.1s ease-in-out',
-        borderRadius: '10px',
+        transition: "opacity 0.1s ease-in-out",
+        borderRadius: "10px",
       }}
       _after={{
-        minH: '350px',
-        zIndex: '-1',
+        minH: "350px",
+        zIndex: "-1",
+        // eslint-disable-next-line quotes
         content: '""',
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        background: 'rgb(0, 0, 0)',
-        left: '0',
-        top: '0',
-        borderRadius: '10px',
+        position: "absolute",
+        width: "100%",
+        height: "100%",
+        background: "rgb(0, 0, 0)",
+        left: "0",
+        top: "0",
+        borderRadius: "10px",
       }}
     >
       <Stack
         align="center"
         justify="center"
-        maxW={{ base: '100%', md: '50%' }}
+        maxW={{ base: "100%", md: "50%" }}
         minW="50%"
       >
         <Image src={logo} border="1px solid gray" />
       </Stack>
       <VStack w="full" pt={3} minH="100%">
-        <Heading textAlign="center" fontSize={['2xl', '2xl', '3xl']}>
+        <Heading textAlign="center" fontSize={["2xl", "2xl", "3xl"]}>
           {titulo}
         </Heading>
         <Stack

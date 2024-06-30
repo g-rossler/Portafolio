@@ -9,10 +9,10 @@ import {
   keyframes,
   Box,
   Link,
-} from '@chakra-ui/react';
+} from "@chakra-ui/react";
 
-import Logo from '../image/react.svg';
-import '../themes/styles.css';
+import Logo from "../image/react.svg";
+import "../themes/styles.css";
 
 function Home() {
   const animationKeyframes = keyframes`
@@ -32,7 +32,8 @@ function Home() {
       px={[5, 10, 14]}
       h="full"
       minH="100vh"
-      maxW="1000px"
+      maxW="full"
+      minW="350px"
       align="center"
       justify="center"
     >
@@ -43,7 +44,7 @@ function Home() {
             color="white"
             letterSpacing="1.5px"
             textAlign="start"
-            fontSize={['2xl', '3xl', '4xl']}
+            fontSize={["2xl", "3xl", "4xl"]}
             w="full"
           >
             My name is:
@@ -52,7 +53,7 @@ function Home() {
             w="full"
             textAlign="start"
             color="#5FE2D1"
-            fontSize={['5xl', '6xl', '7xl']}
+            fontSize={["5xl", "6xl", "7xl"]}
             letterSpacing="3px"
           >
             Rossler Gerardo
@@ -61,11 +62,11 @@ function Home() {
             letterSpacing="1.5px"
             pl={1.5}
             color="white"
-            fontSize={['2xl', '3xl', '4xl']}
+            fontSize={["2xl", "3xl", "4xl"]}
             textAlign="start"
             w="full"
           >
-            I&apos;m a Front End Developer.
+            I am a Full Stack Developer.
           </Text>
         </VStack>
         <Box align="center" ml={0} w="full" p="10px">
@@ -77,24 +78,24 @@ function Home() {
         justify="center"
         align="center"
         pt={[16, 10, 20]}
-        direction={{ base: 'column', md: 'row' }}
+        direction={{ base: "column", md: "row" }}
         spacing={3}
         h="full"
         w="full"
       >
-        <Link href="#proyectos">
+        <Link href="#projects">
           <Button type="button" variant="primary">
             PROJECTS
           </Button>
         </Link>
 
-        <Link href="https://github.com/g-rossler">
+        <Link href="https://github.com/g-rossler" isExternal>
           <Button type="button" variant="primary">
             GITHUB
           </Button>
         </Link>
 
-        <Link href="https://www.linkedin.com/in/gerardo-rossler/">
+        <Link href="https://www.linkedin.com/in/gerardo-rossler/" isExternal>
           <Button type="button" variant="primary">
             LINKEDIN
           </Button>
