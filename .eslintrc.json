@@ -22,6 +22,8 @@
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { "allow": "as-needed" }],
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/prop-types": [0]
+        "react/prop-types": [0],
+        "linebreak-style":"off",
+        "quotes": ["error", "double"]
     }
 }
